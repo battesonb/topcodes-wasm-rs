@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TopCode Webcam example using WASM</title>
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .video-container {
+        width: 640px;
+        height: 480px;
+      }
+
+      .video-container > * {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="main.js"></script>
+    <div class="video-container">
+      <video width="640px" height="480px"></video>
+      <canvas id="annotation-canvas" width="640px" height="480px"></canvas>
+      <canvas style="display: none;" id="video-canvas" width="640px" height="480px"></canvas>
+    </div>
+    <div id="statistics">Wow</div>
+  </body>
+</html>
+

@@ -1,0 +1,12 @@
+{
+  "name": "topcodes-wasm",
+  "version": "0.1.0",
+  "files": [
+    "topcodes_wasm_bg.wasm",
+    "topcodes_wasm.js",
+    "topcodes_wasm.d.ts"
+  ],
+  "module": "topcodes_wasm.js",
+  "types": "topcodes_wasm.d.ts",
+  "sideEffects": false
+}
